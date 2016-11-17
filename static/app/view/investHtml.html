@@ -1,0 +1,65 @@
+<div class="titInvest">
+    <h3>定期产品</h3>
+</div>
+##for(var i=0;i<main.length;i++){##
+       <div id="js-xsb-wrap">
+	        <div class="proSingle">
+				<span class="subTri img2">加息</span>
+				<a href="#" title="" class="markBox markBox3">
+					<p>{{main[i].name}}</p>
+					<i class="pic">
+						<img src="images/proLog_ryb_6a47e0f.png" alt="">
+					</i>
+				</a>
+				<div class="proWrap">
+					<div class="proInnerWrap">
+						<div class="titCloumn">
+							<h3>
+							    <a href="#" title="">{{main[i].title}}</a>
+							    ##if(main[i].display == 0){##
+							        <span class="vip">会员</span>
+							    ##}## 
+							</h3>
+						</div>
+						<ul class="proItem clear">
+							<li class="liRate">
+								<p>预期年化收益率</p>
+								<div class="data">
+									{{main[i].pre}}<span>%</span>
+								</div>
+							</li>
+							<li>
+								<p>投资期限</p>
+								<div class="data">
+									{{main[i].date}}<span class="unit">天</span>
+								</div>
+							</li>
+							<li>
+								<p>购买人数</p>
+								<div class="data">
+									{{main[i].people}}<span>人</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="processBox">
+						<div class="processBar">
+							<span style="width:{{main[i].num}}%" class="block"></span>
+						</div>
+						<span class="rate">已售{{main[i].num}}%</span>
+					</div>
+					<!-- 倒计时 -->
+					<div class="box">
+				        <span>募集期:</span>
+				        <i class="ico img2"></i>
+				        <input type="text" class="time_d">天<input type="text" class="time_h">时<input type="text" class="time_m">分<input type="text" class="time_s">秒
+				    </div>
+				</div>
+				<div class="buyIt">
+					<a href="#" title="" class="btn">
+						立即抢购
+					</a>
+		    </div>
+	        </div>
+		</div>
+##}##

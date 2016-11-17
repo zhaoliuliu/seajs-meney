@@ -1,0 +1,93 @@
+##for(var i = 0;i < showMessage.length;i++){##
+   ##if(showMessage[i].Title2 == 0){##
+       ##if(showMessage[i].btn == 1 ){##
+            <div class="box-content fl clear">
+                <h3>{{showMessage[i].Title1}}</h3>
+                <ul class="content-of1 fr">
+                    <li class="last-li">{{showMessage[i].txt1}}</li>
+                </ul>
+                <div class="content-of2 clear">
+                    <div class="of2-txt1 clear fl">
+                        <span class="txt1 fl">预计年化收益率</span> <span class="txt1 fr">投资期限</span>
+                    </div>
+                     <div class="of2-txt2 clear fl">
+                        <span class="txt2 fl">{{showMessage[i].percent}}</span>
+                        <span class="txt2 fr">{{showMessage[i].dateNum}}<span class="date">天</span></span>
+                    </div>
+                    <div class="of2-txt1 clear fl">
+                        <span class="txt1 fr">{{showMessage[i].overplus}}</span>
+                    </div>
+                    <div class="process fl">
+                        <div style="width:{{showMessage[i].pro}}%"></div>
+                    </div>
+                    <div class="purchase-btn fl">已抢购</div>
+                    <div class="of2-txt1 clear fl">
+                         <span class="txt1 fl">
+                         <span class="img2"></span>剩余
+                         <input type="text" class="time_d red">天
+                         <input type="text" class="time_h red">时
+                         <input type="text" class="time_m red">分
+                         <input type="text" class="time_s red">秒
+                         </span>
+                         <span class="txt1 fr">{{showMessage[i].perchuse}}</span>
+                    </div>
+                </div>
+             </div>
+       ##}else{##
+             <div class="box-content fl clear">
+                <h3>{{showMessage[i].Title1}}</h3>
+                <ul class="content-of1 fr">
+                    <li class="last-li">{{showMessage[i].txt1}}</li>
+                </ul>
+                <div class="content-of2 clear">
+                    <div class="of2-txt1 clear fl">
+                        <span class="txt1 fl">预计年化收益率</span> <span class="txt1 fr">投资期限</span>
+                    </div>
+                     <div class="of2-txt2 clear fl">
+                        <span class="txt2 fl">{{showMessage[i].percent}}</span>
+                        <span class="txt2 fr">{{showMessage[i].dateNum}}</span>
+                    </div>
+                    <div class="purchase-btn fl purchase-btn2">已售罄</div>
+                    <div class="of2-txt1 clear fl">
+                        <span class="txt1 fr">{{showMessage[i].perchuse}}</span>
+                    </div>
+                </div>
+            </div> 
+       ##}##
+      
+   ##}else{##
+      <div class="box-content fl clear">
+        <h3>{{showMessage[i].Title1}}<span class="vip">会员</span></h3>
+        <ul class="content-of1 fr">
+            <li class="last-li">{{showMessage[i].txt1}}</li>
+        </ul>
+        <div class="content-of2 clear">
+            <div class="of2-txt1 clear fl">
+                <span class="txt1 fl">预计年化收益率</span> <span class="txt1 fr">投资期限</span>
+            </div>
+             <div class="of2-txt2 clear fl">
+                <span class="txt2 fl">{{showMessage[i].percent}}</span>
+                <span class="txt2 fr">{{showMessage[i].dateNum}}<span class="date">天</span></span>
+            </div>
+            <div class="of2-txt1 clear fl">
+                <span class="txt1 fr">{{showMessage[i].overplus}}</span>
+            </div>
+            <div class="process fl">
+                <div style="width:{{showMessage[i].pro}}%"></div>
+            </div>
+            <div class="purchase-btn fl">已抢购</div>
+            <div class="of2-txt1 clear fl">
+                <span class="txt1 fl">
+                     <span class="img2"></span>剩余
+                     <input type="text" class="time_d red">天
+                     <input type="text" class="time_h red">时
+                     <input type="text" class="time_m red">分
+                     <input type="text" class="time_s red">秒
+                     </span>
+                <span class="txt1 fr">{{showMessage[i].perchuse}}</span>
+            </div>
+        </div>
+     </div>
+   ##}##
+    
+##}##
